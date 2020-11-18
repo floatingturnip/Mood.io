@@ -1,0 +1,84 @@
+.container{
+    height: 300px;
+    width: 100%;
+}
+
+#display{
+    width: 100%;
+    font-size: 72px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.button{
+    text-align: center;
+}
+
+.input{
+    width: 100%;
+    height: 100%;
+}
+
+.textbox {
+    width: 100%;
+    height: 40px;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    border: 10px;
+    border-color: white;
+    Background-color: yellow;/* Your Color */
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    grid-template-rows: 30px 30px 30px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.page-grid{
+    display: grid;
+    grid-template-columns: 130px 130px 130px 130px;
+    grid-template-rows: 130px 130px 130px;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
+
+.split{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Y{
+    background: yellow;
+    color: yellow;
+}
+
+.R{
+    background: red;
+    color: red;
+}
+
+.G{
+    background: green;
+    color: green;
+}
+
+.O{
+    background: orange;
+    color: orange;
+}
+
+.B{
+    background: blue;
+    color: blue;
+}
+
+.W{
+    background: white;
+    color: white;
+}

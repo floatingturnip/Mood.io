@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+  <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+  <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  -->
+  <link rel="stylesheet" href="static/styles.css">
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Image and text top navigation bar -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <!--<img src="/static/images/poop.jpg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+    MoodJournal
+  </a>
+</nav>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+
+  <title>Journal</title>
+
+
+
+  <!-- Custom fonts for this template
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  Custom styles for this template
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  -->
+
+
+</head>
+
+<div class="split left">
+  <div class="centered">
+    <h2>Journal Entry</h2>
+    <div class="form-group">
+      <form action="/" method="post" id="usrpost">
+          <label class="col-form-label" for="inputDefault"></label>
+          <textarea rows = "5" cols = "60" name = "entry" style="height:200px;font-size:14pt;" placeholder="Enter you thoughts below!" ></textarea>
+            <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    <div>
+      <p></p>
+      <p></p>
+      <h2>Latest Entry:</h2>
+      {{entry}}
+    </div>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <h2>Mood Rating: {{sentiment}}</h2>
+    <!--<img src={{ url_for('static', filename='chicken-nuggets.jpg') }}> -->
+    <img src={{ url_for('static', filename='graph.png') }}>
+    {{data}}
+  </div>
+</div> 
+
+</html>
