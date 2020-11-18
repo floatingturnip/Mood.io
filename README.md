@@ -1,5 +1,7 @@
 # mood.io
 
+This is a Hackathon project created for nwHacks 2020 original repository can be found [here](https://github.com/CharLee674/NWHacks2020_FIZZPEEPS), it has since been cleaned up. Project can also be viewed on [Devpost](https://devpost.com/software/mood-journal-q930ok)
+
 ## Inspiration
 As students who undergo a lot of stress throughout the year, we are often out of touch with our emotions and it can sometimes be difficult to tell how we are feeling throughout the day. There are days when we might be unsure of how we are really feeling based on our self-talk. Do I feel down, happy, sad, etc? We decided to develop a journal app that interprets the entries we write and quantitatively tracks our mood. This allows us to be more aware of our mental well-being at all times.
 
